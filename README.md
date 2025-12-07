@@ -39,7 +39,6 @@ The NumPy version includes:
 
 Predicted probabilities:
 [[0.003], [0.998], [0.998], [0.003]]
-
 Rounded predictions:
 [0, 1, 1, 0]
 
@@ -51,28 +50,32 @@ This implementation develops deep intuition for how neural networks truly learn.
 ## ⚡ Keras/TensorFlow Implementation
 
 The same architecture is recreated using Keras:
-model = Sequential([ Dense(2, activation='tanh', input_dim=2),
-    Dense(1, activation='sigmoid')
-])
+
+model = Sequential([ Dense(2, activation='tanh', input_dim=2), Dense(1, activation='sigmoid') ])
+
 Using the Adam optimizer and binary cross-entropy loss, the model quickly learns XOR with very high confidence.
 
 ---
 
-🎨 Decision Boundary Visualization
-- This project includes a visualization script that shows:
+## 🎨 Decision Boundary Visualization
+This project includes a visualization script that shows:
+  
 - XOR regions predicted by the model
 - The true XOR data points
 - The curved nonlinear boundary learned by the network
+  
 This makes the network’s learned function easy to interpret.
 
 ---
 
-🎯 Why XOR?
+## 🎯 Why XOR?
 
 XOR is the classical example that proves the necessity of:
+
 - nonlinear activation functions
 - hidden layers
 - multi-layer learning
+  
 It's a simple yet powerful demonstration of what neural networks can do beyond linear models.
 
 ---
