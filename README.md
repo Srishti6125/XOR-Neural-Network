@@ -1,4 +1,4 @@
-🔥 XOR Neural Network — NumPy vs Keras/TensorFlow  
+#🔥 XOR Neural Network — NumPy vs Keras/TensorFlow  
 ### *A side-by-side exploration of low-level neural network math vs high-level deep learning frameworks.*
 
 ---
